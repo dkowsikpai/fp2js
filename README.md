@@ -14,10 +14,10 @@ Paste the code given below and the input box with name='fp' will contain the fin
 ## Code:
 
     <script src="src/jssha3.js" async></script>
-<script src="src/fp2.min.js"></script><input type='hidden' name='fp'>
-<script>
-window.onload=function(){Fingerprint2.get(function(e){document.getElementsByName('fp')[0].value=sha3_256(e.map(function(e){return e.value}).join())})}
-</script>
+	<script src="src/fp2.min.js"></script><input type='hidden' name='fp'>
+	<script>
+	window.onload=function(){Fingerprint2.get(function(e){document.getElementsByName('fp')[0].value=sha3_256(e.map(function(e)		{return e.value}).join())})}
+	</script>
 
 #### Use:
 	var fp = $('[name=fp]').val();
